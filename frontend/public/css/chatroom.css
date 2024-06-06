@@ -1,0 +1,95 @@
+/* Slog za celoten chatroom container */
+#chatroom {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f0f8ff; /* Svetlo modro ozadje */
+  font-family: 'Nunito', sans-serif;
+}
+
+/* Slog za join-container */
+.join-container {
+  background: #fff; /* Belo ozadje */
+  padding: 40px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  width: 500px; /* Povečana širina obrazca */
+  max-width: 90%; /* Največja širina za mobilne naprave */
+}
+
+/* Slog za join-header */
+.join-header h1 {
+  font-size: 28px; /* Povečana velikost pisave za naslov */
+  margin-bottom: 30px; /* Povečana spodnja margina */
+  color: #53a8b6; /* Modro-zelen odtenek za naslov */
+}
+
+/* Slog za join-main */
+.join-main {
+  margin-top: 20px;
+}
+
+/* Slog za form-control */
+.form-control {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-control label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #0056b3; /* Temno modra barva za oznake */
+}
+
+.form-control input,
+.form-control select {
+  width: 100%;
+  padding: 12px; /* Povečan padding za vhodna polja in izbirni meni */
+  border: 1px solid #007bff; /* Modra obroba */
+  border-radius: 5px;
+  font-size: 16px;
+  background: #e6f0ff; /* Svetlo modro ozadje za inpute */
+  color: #333;
+}
+
+.form-control input::placeholder {
+  color: #999; /* Siva barva za placeholder besedilo */
+}
+
+/* Slog za gumb */
+.btn {
+  display: inline-block;
+  padding: 12px 24px; /* Povečan padding za gumb */
+  border: none;
+  border-radius: 5px;
+  background: #53a8b6; /* Modro-zelen odtenek za gumb */
+  color: #fff; /* Belo besedilo na gumbu */
+  font-size: 18px; /* Povečana velikost pisave za gumb */
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background: #53a8b6; /* Temnejši modro-zelen odtenek za hover stanje gumba */
+}
+
+/* Dodatni slog za responsive dizajn */
+@media (max-width: 768px) {
+  .join-container {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .form-control input,
+  .form-control select {
+    font-size: 14px;
+  }
+
+  .btn {
+    padding: 10px 20px;
+    font-size: 16px;
+  }
+}

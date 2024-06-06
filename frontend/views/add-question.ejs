@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Question</title>
+  <link rel="stylesheet" href="./css/addquestions.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Add Question</h1>
+    <form action="/add-question" method="POST">
+      <div class="form-group">
+        <label for="question">Question</label>
+        <input type="text" id="question" name="question" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="value">Value</label>
+        <input type="number" id="value" name="value" class="form-control" value="10" required>
+      </div>
+      <div class="form-group">
+        <label for="option1">Option 1</label>
+        <input type="text" id="option1" name="options[]" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="option2">Option 2</label>
+        <input type="text" id="option2" name="options[]" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="option3">Option 3</label>
+        <input type="text" id="option3" name="options[]" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="option4">Option 4</label>
+        <input type="text" id="option4" name="options[]" class="form-control" required>
+      </div>
+      <div class="form-group">
+        <label for="correct_answer">Correct Answer (number 0-3)</label>
+        <input type="number" id="correct_answer" name="correct_answer" class="form-control" min="0" max="3" required>
+      </div>
+      <div class="form-group">
+        <label for="quizId">Quiz ID</label>
+        <input type="text" id="quizId" name="quizId" class="form-control" value="quizzes/kjhwJbLAdF4ceSkBIw3P" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Add Question</button>
+    </form>
+  </div>
+</body>
+</html>
